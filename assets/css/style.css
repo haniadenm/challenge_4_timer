@@ -1,0 +1,210 @@
+/* Reset default box-sizing and set global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the body section of HTML */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: #b21e81;
+}
+
+/* Styling for the header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 144, 224);
+    color: black;
+    padding: 20px;
+}
+
+/* Styling for the coding quiz header */
+h1 {
+    font-size: 4rem;
+}
+
+/* Styling for the nav bar elements */
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+/* Styling for nav bar text */
+nav a {
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Default styling for all buttons */
+button {
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: .21px;
+    line-height: 1.2;
+    max-width: 225px;
+    padding: 20px 52px 25px 52px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for unordered lists */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/* Styling for list items of unordered list */
+li {
+    font-size: 8px;
+    align-items: center;
+}
+
+/* Styling for the text preceding user input */
+label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Styling for user input text */
+input[type="text"] {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/* Styling to hide boxes */
+.hidden {
+    display: none !important;
+}
+
+/* Styling for title sections */
+.Title,
+.Question-box,
+.Score-box,
+.High-Score-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* Styling for the start button */
+.start-button {
+    font-size: 16px;
+    height: 30px;
+    line-height: 8px;
+    margin-top: 20px;
+}
+
+/* Styling for question box title */
+.Question-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for question box timer */
+.Question-box div {
+    display: block;
+}
+
+/* Styling for questions asked */
+.Question-box h2 {
+    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for score box title */
+.Score-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for text preceding user input in score box */
+.Score-box label {
+    display: block;
+}
+
+/* Styling for user input in score box */
+.Score-box input {
+    display: block;
+}
+
+/* Styling for submit button in score box */
+.Score-box button {
+    display: block;
+}
+
+/* Styling for header text of each section within container */
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    top: -40px;
+    width: 95%;
+    margin-left: 3%;
+    border-style: solid;
+    border-color: var(--black);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 200%;
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+}
+
+/* Styling for writing in the title box */
+#greeting,
+#first,
+#second,
+#third,
+#joke {
+    font-size: 24px;
+}
+
+/* Styling for the timer */
+#timer-count {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the submit button */
+#submit-button {
+    font-size: 16px;
+    height: 10px;
+    line-height: 10px;
+}
+
+/* Styling for the play again button */
+#play-again-button

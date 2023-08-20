@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <header>
+        <h1>Coding Quiz</h1>
+        <nav class="navbar">
+            <ul>
+                <li><button id="play-again-button">Play Again</button></li>
+                <li><button id="high-scores-button">View High Scores</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Title">
+            <h2 class="title">Welcome</h2>
+            <p id="greeting">Try to answer the following code-related questions within the time limit.</p>
+            <ul>
+                <li id="first">Keep in mind that incorrect answers will be penalized your score & time by ten seconds!
+                </li>
+            </ul>
+
+            <button class="start-button">Start</button>
+        </section>
+
+        <section class="Question-box hidden">
+            <h2 class="title">Quiz</h2>
+            <div id="timer-count">Time: 60s</div>
+            <h2 id="question-asked"></h2>
+            <ul id="question-answer-choices"></ul>
+        </section>
+
+        <section class="Score-box hidden">
+            <h2 class="title">Scores</h2>
+            <div id="scores"></div>
+            <label for="user-initials-input">Enter your initials:</label>
+            <input type="text" id="user-initials-input" name="user-initials-input">
+            <button id="submit-button">Submit Score</button>
+        </section>
+
+        <section class="High-Score-box hidden">
+            <h2 class="title">High Scores</h2>
+            <ul id="high-scores-list"></ul>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
